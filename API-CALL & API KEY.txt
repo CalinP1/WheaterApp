@@ -1,0 +1,1 @@
+http://api.openweathermap.org/geo/2.5/direct?q={city name}&limit={2}&appid={74aaeb739345cccd0bc35e9f57a6e552}

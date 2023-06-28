@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-app</title>
+    <title>Weather-app: HOMEPAGE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="weather-stylesheet.css" />
 </head>
 <body>
     <div class="first-container pb-3">
         <nav class="navbar navbar-expand-lg bg-info">
             <div class="container-fluid">
                 <a class="navbar-brand me-3" href="./Homepage.html">
-                    <img src="https://freepngimg.com/thumb/weather/23525-5-weather-free-download.png" height="50" width="55" loading="lazy"/>
+                    <img src="https://freepngimg.com/thumb/weather/23525-5-weather-free-download.png" height="65" width="70" loading="lazy"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"  >
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" aria-expanded="false"  >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent2">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3 ">
-                            <a class="nav-link text-dark fw-bold" href="#">WEATHER TODAY</a>
+                            <a class="nav-link text-dark fw-bold" href="./Homepage.html">WEATHER TODAY</a>
                         </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link text-dark fw-bold" href="#">WEATHER THIS WEEK</a>
+                        <li class="nav-item mx-3"> 
+                            <a class="nav-link text-dark fw-bold" href="./ABOUT.html">ABOUT</a>
                         </li>
-                        <li class="nav-item mx-3 ">
-                            <a class="nav-link text-dark fw-bold" href="#">NEWSLETTER</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-3" type="search" placeholder="Search for a location.." aria-label="Search">
-                        <button class="btn btn-outline-dark text-dark bg-light me-3" type="submit">Search</button>
-                    </form>
+                    </ul> 
                 </div>
             </div>
         </nav>
     </div>
-    <main class=" d-flex d-flex align-items-center justify-content-center pt-5" >
-            <div class="d-flex bg-primary align-items-center rounded-5" style="height: 300px; width: 400px;">
-              <img class="px-4" src="https://cdn-icons-png.flaticon.com/512/3767/3767036.png" style="height: 160px; width: 230px;"/>
-            </div>
+    <main class=" d-flex align-items-center justify-content-center pt-5 wrap-nowrap flex-column" >
+        <div class="inputDetails d-flex justify-content-center align-content-center text-center px-5">
+            <p> Search for a location. Get details about the weather for the next 24h.</p>
+
+        </div>
+        <form class="d-flex my-5" id = "formSearch">
+            <input class="form-control me-3 rounded-3 text-dark" type="text" placeholder="Search for a location.." aria-label="Search" id="citySearch">
+            <button class="btn btn-outline-dark text-dark bg-light me-3 rounded-4" type="submit">Search</button>
+        </form>  
+        <div class="d-flex align-items-center justify-content-center align-content-center rounded-5 row col-6
+         text-center " id="dataPrint" >
+             <span id="weatherInfo" class="fw-bold fs-4 d-flex align-items-center justify-content-center"></span>
+              <span id="temperature" class="fw-bold fs-4 d-flex align-items-center justify-content-center "></span>
+              <span id="tempFeelsLike" class="fw-bold fs-4 d-flex align-items-center justify-content-center"></span>
+              <span id="wind" class="fw-bold fs-4 d-flex align-items-center justify-content-center"></span>
+              <span id="humidity" class="fw-bold fs-4 d-flex align-items-center justify-content-center"></span>
+              <span id="weatherDesc" class="fw-bold fs-4 d-flex align-items-center justify-content-center"></span>
+         </div>
+        <div class="hoursWeatherCarousel d-flex align-content-center justify-content-center my-4 row" id="hoursWeatherCarousel">
+
+        </div>
       </main>
+      <script src="./script.js"></script>
 </body>
 </html>

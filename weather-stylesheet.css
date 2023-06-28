@@ -1,0 +1,36 @@
+.clouds{
+    background-image: url("https://www.thoughtco.com/thmb/QIHGvOYobApZ_sY6xRjIkBdhcqg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/521928855-56a9e2925f9b58b7d0ffac0a.jpg");
+    font-weight: bold;
+}
+
+.rain{
+    background-image: url("https://i.ytimg.com/vi/Fp6a9pozydc/maxresdefault.jpg");
+    color: white;
+    font-weight: bold;
+}
+.clear{
+    background-image: url("https://wallpapercave.com/wp/wp6680277.jpg");
+    color:black;
+    font-weight: bold;
+}
+.drizzle{
+    background-image: url("https://dailytimes.com.pk/assets/uploads/2018/06/15/raindrops_trees_-_pixabay-1511188578-305.jpg");
+    color: white;
+    font-weight: bold;
+}
+.thunder{
+    background-image: url("https://media.wcnc.com/assets/WFMY/images/dab58622-2b2c-4450-891c-16ae63f11fc9/dab58622-2b2c-4450-891c-16ae63f11fc9_1140x641.jpg");
+    color: white;
+    font-weight: bold;
+}
+#dataPrint{
+    background: rgb(244,220,200);
+background: linear-gradient(35deg, rgba(244,220,200,1) 11%, rgba(244,186,110,1) 19%, rgba(120,173,242,1) 30%, rgba(47,115,203,1) 40%, rgba(47,72,113,1) 75%, rgba(26,42,96,1) 90%);
+color:white;
+}
+
+.inputDetails{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
