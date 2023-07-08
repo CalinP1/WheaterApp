@@ -35,19 +35,22 @@ formCity.addEventListener('submit', function(event) {
                 const hour = new Date(data.list[i].dt_txt).getHours(); 
                 childElement.classList.add("d-flex", "align-items-center", "justify-content-center", "text-center", "col-5","py-3","m-3","rounded-5");
                 if(data.list[i].weather[0].main === "Clouds"){
-                    childElement.classList.add("clouds");
+                    childElement.classList.add("clouds", "col-12", "col-sm-6", "col-md-4","col-lg-4");
                 }
-                if(data.list[i].weather[0].main === "Rain"){
-                    childElement.classList.add("rain");
+                else if(data.list[i].weather[0].main === "Rain"){
+                    childElement.classList.add("rain","col-12", "col-sm-6", "col-md-4","col-lg-4");
                 }
-                if(data.list[i].weather[0].main === "Clear"){
-                    childElement.classList.add("clear");
+                else if(data.list[i].weather[0].main === "Clear"){
+                    childElement.classList.add("clear","col-12", "col-sm-6", "col-md-4","col-lg-4");
                 }
-                if(data.list[i].weather[0].main === "Drizzle"){
-                    childElement.classList.add("drizzle");
+                else if(data.list[i].weather[0].main === "Drizzle"){
+                    childElement.classList.add("drizzle","col-12", "col-sm-6", "col-md-4","col-lg-4");
                 }
-                if(data.list[i].weather[0].main === "Thunderstorm"){
-                    childElement.classList.add("thunder");
+                else if(data.list[i].weather[0].main === "Thunderstorm"){
+                    childElement.classList.add("thunder","col-12", "col-sm-6", "col-md-4","col-lg-4");
+                }
+                else{
+                    childElement.classList.add("default","col-12", "col-sm-6", "col-md-4","col-lg-4")
                 }
                 childElement.textContent = `Hour ${hour}:00, temperature: ${data.list[i].main.temp} C, humidity: ${data.list[i].main.humidity} %, wind: ${data.list[i].wind.speed} km/h, ${data.list[i].weather[0].main} - ${data.list[i].weather[0].description}`;
             }
@@ -59,6 +62,8 @@ formCity.addEventListener('submit', function(event) {
         cityInput.value = " ";
         const dataPrint = document.getElementById("dataPrint");
         dataPrint.classList.add("d-none");
+        const carouselCard = document.getElementById("hoursWeatherCarousel");
+        carouselCard.classList.add("d-none");
         });
     
 });
