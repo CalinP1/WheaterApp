@@ -1,6 +1,6 @@
 const formCity = document.getElementById("formSearch");
 const cityInput = document.getElementById("citySearch");
-const apiKey = process.env.API_KEY;
+const apiKey = "7d6a19606646e24b13e0ea3a504144bc"; 
 
 formCity.addEventListener('submit', function(event) {
   event.preventDefault();
