@@ -32,7 +32,8 @@ formCity.addEventListener('submit', function(event) {
 
                 const childElement = document.createElement("div");
                 parentElement.appendChild(childElement);
-                const hour = new Date(data.list[i].dt_txt).getHours(); 
+                const timestamp = new Date(data.list[i].dt_txt.replace(/-/g, '/')).getTime();
+                const hour = new Date(timestamp).getHours();
                 childElement.classList.add("d-flex", "align-items-center", "justify-content-center", "text-center", "col-5","py-3","m-3","rounded-5");
                 if(data.list[i].weather[0].main === "Clouds"){
                     childElement.classList.add("clouds", "col-12", "col-sm-6", "col-md-4","col-lg-4");
