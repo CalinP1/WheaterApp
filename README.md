@@ -1,4 +1,4 @@
-WheatherApp
+WheatherApp  -- https://clasicweatherapp.netlify.app/
 
 It is a simple application made with vanilla JS (using the Fetch API and some functionality), CSS, and Bootstrap.
 Using a weather API, we can retrieve the weather forecast for the next 24 hours for the searched location.
